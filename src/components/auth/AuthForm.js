@@ -10,7 +10,7 @@ const AuthForm = (props) => {
   const { setUserName, setAuthToken, user_name } = useAuth();
 
   const authenticate = async () => {
-    const basePath = "http://localhost:5000/api/auth"; //server side path
+    const basePath = "https://theillissionproject.herokuapp.com/api/auth"; //server side path
     let url = basePath;
 
     if (action === "Sign In") {
