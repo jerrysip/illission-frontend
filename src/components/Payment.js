@@ -15,10 +15,13 @@ function Payment() {
   });
 
   async function handleToken(token, addresses) {
-    const response = await axios.post("http://localhost:5000/payment", {
-      token,
-      product,
-    });
+    const response = await axios.post(
+      "https://theillissionproject.herokuapp.com//payment",
+      {
+        token,
+        product,
+      }
+    );
     const { status } = response.data;
     console.log("Response:", response.data);
     if (status === "success") {
@@ -35,7 +38,7 @@ function Payment() {
         <h3>On Sale · ${product.price}</h3>
       </div>
       <StripeCheckout
-        stripeKey="pk_test_51IdNyyDdUkG2etErS4Blj1T6aIFYYEEoSr9TqK4jM3MVaWyBvZVp4tBFNgBEKYP4P2xMKBzX6OqvADrk6rycT6sy00vAwG16w1"
+        stripeKey="process.env.STRIPE_PUBLIC_KEY"
         token={handleToken}
         amount={product.price * 100}
         name="The Weekly Edition"

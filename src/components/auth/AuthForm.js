@@ -122,7 +122,7 @@ const AuthForm = (props) => {
         <form
           className="facebook"
           method="get"
-          action="http://localhost:5000/facebook"
+          action="https://theillissionproject.herokuapp.com//facebook"
         >
           <button className="fb" type="submit">
             <i class="fab fa-facebook"></i>
@@ -132,7 +132,7 @@ const AuthForm = (props) => {
         <form
           className="google"
           method="get"
-          action="http://localhost:5000/google/"
+          action="https://theillissionproject.herokuapp.com//google/"
         >
           <button className="g" type="submit">
             <i
