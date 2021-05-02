@@ -1,0 +1,36 @@
+.mailchimp {
+  display: flex;
+  flex-direction: column;
+  color: pink;
+  width: 100%;
+  justify-content: center;
+}
+
+.join {
+  color: black;
+  font-family: bebas neue;
+  font-size: 3rem;
+  width: 100%;
+}
+
+button {
+  font-family: bebas neue;
+  padding-left: 10px;
+}
+
+input {
+  width: 30vh;
+}
+
+@media (max-width: 650px) {
+  input {
+    width: 20vh;
+    padding-left: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  .join {
+    font-size: 2rem;
+  }
+}

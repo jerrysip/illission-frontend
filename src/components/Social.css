@@ -1,0 +1,52 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  width: 50px;
+  align-items: center;
+  height: 152px;
+  justify-content: center;
+  position: fixed;
+  /* border-top: 9px solid rgb(155, 212, 167); */
+  border-bottom: 9px solid rgb(174, 226, 185);
+  border-left: 1px solid rgb(235, 236, 235);
+  color: rgb(7, 7, 7);
+
+  right: 0;
+}
+
+i {
+  margin: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(174, 226, 185);
+}
+
+button {
+  text-decoration: none;
+  background-color: white;
+  border: none;
+}
+
+button:hover {
+  color: rgb(174, 226, 185);
+}
+
+i:hover {
+  color: rgb(174, 226, 185);
+}
+
+@media (max-width: 650px) {
+  .social {
+    margin-top: 10rem;
+    border-top: 10px solid rgb(174, 226, 185);
+  }
+}

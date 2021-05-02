@@ -1,0 +1,95 @@
+.footer-wrap {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.footer {
+  height: 27vh;
+  background-color: white;
+  border-top: 3px solid black;
+  position: relative;
+  top: 1vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-contact {
+  border-right: 1px solid black;
+  padding-right: 17px;
+
+  padding-top: 5px;
+}
+
+.footer-newsletter {
+  margin-top: 2rem;
+}
+
+.footer-links {
+  border-left: 1px solid black;
+  padding-left: 2rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-social {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.footer-news {
+  font-size: 2rem;
+}
+
+.footer-placeholder {
+  margin-top: 1rem;
+  width: 17rem;
+}
+
+.footer-signup {
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-family: bebas neue;
+  padding: 4px;
+  width: 5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid black;
+}
+p {
+  font-size: 15px;
+  font-family: "roboto";
+}
+
+@media screen and (max-width: 700px) {
+  .footer-newsletter {
+    position: relative;
+    bottom: 1rem;
+  }
+  .footer-placeholder {
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 90%;
+  }
+  .footer-contact {
+    font-size: 10px;
+    padding-top: 2rem;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}

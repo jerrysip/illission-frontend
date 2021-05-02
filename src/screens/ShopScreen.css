@@ -1,0 +1,54 @@
+.shopscreen-hero {
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/jarbubble.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0.5rem;
+}
+
+/* .shopscreen {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.shopscreen__title {
+  font-size: 2rem;
+  color: #171717;
+  margin-bottom: 1rem;
+
+  text-align: center;
+  margin-top: 8rem;
+  font-weight: 800;
+  border-bottom: 2px solid black;
+}
+
+.shopscreen__products {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1232px) {
+  .shopscreen__products {
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .shopscreen__products {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 630px) {
+  .shopscreen__products {
+    grid-template-columns: 1fr;
+  }
+}
