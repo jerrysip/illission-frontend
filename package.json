@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://theillissionproject.com/home",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@stripe/react-stripe": "^7.0.0-beta.0",
