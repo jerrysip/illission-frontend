@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -38,6 +43,7 @@ function App() {
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signup" component={SignIn} />
           <Route exact path="/success" component={Success} />
+          <Redirect to="/home" />
         </Switch>
       </main>
     </Router>
