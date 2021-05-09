@@ -16,7 +16,7 @@ function Payment() {
 
   async function handleToken(token, addresses) {
     const response = await axios.post(
-      "https://theillissionproject.herokuapp.com//payment",
+      "https://theillissionproject.herokuapp.com/payment",
       {
         token,
         product,
