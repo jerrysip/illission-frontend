@@ -5,7 +5,7 @@ export default class FreeShipping extends Component {
   render() {
     return (
       <div className="freeshipping">
-        FREE SHIPPING FOR ALL U.S. ORDERS OVER $39
+        FREE SHIPPING FOR ALL U.S. ORDERS OVER $39 // WEBSITE UNDER CONSTRUCTION
       </div>
     );
   }
