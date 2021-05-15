@@ -34,17 +34,17 @@ function App() {
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <main className="app">
         <Switch>
-          <Route exact path="/home" component={HomeScreen} />
+          {/* <Redirect exact from="/" to="/home" /> */}
+          <Route exact path="/" component={HomeScreen} />
           <Route exact path="/shop" component={ShopScreen} />
           {/* <Route exact path="/product/:id" component={ProductScreen} /> */}
-          <Route exact path="api/products/:id" component={ProductScreen} />
+          <Route exact path="/products/:id" component={ProductScreen} />
           <Route exact path="/cart" component={CartScreen} />
           <Route exact path="/ourstory" component={OurStory} />
           <Route exact path="/products" component={Product} />
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signup" component={SignIn} />
           <Route exact path="/success" component={Success} />
-          <Redirect to="/home" />
         </Switch>
       </main>
     </Router>
