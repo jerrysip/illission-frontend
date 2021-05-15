@@ -13,7 +13,10 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
 
         <p className="info__price">${price}</p>
 
-        <Link to={`heroku/api/products/${productId}`} className="info__button">
+        <Link
+          to={`https://theillissionproject.herokuapp.com/api/products/${productId}`}
+          className="info__button"
+        >
           View
         </Link>
       </div>
