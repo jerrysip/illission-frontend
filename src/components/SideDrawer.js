@@ -20,7 +20,7 @@ const SideDrawer = ({ show, click }) => {
     <div className={sideDrawerClass.join(" ")}>
       <ul className="sidedrawer__links" onClick={click}>
         <li>
-          <Link to="/home">HOME</Link>
+          <Link to="/">HOME</Link>
         </li>
         <li>
           <Link to="/">SHOP</Link>
